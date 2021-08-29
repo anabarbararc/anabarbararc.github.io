@@ -6,7 +6,7 @@
 
 [Project 1 Title](/sample_page)
 <br>
-[![](https://img.shields.io/badge/Python-Project-blue-?logo=Python)](https://www.linkedin.com/in/ana-cavalcante/)
+[![View on GitHub](https://img.shields.io/badge/Python-Project-blue-?logo=Python)](https://www.linkedin.com/in/ana-cavalcante/)
 <br>
 Little description
 <!--
