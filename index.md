@@ -5,7 +5,9 @@
 ## Project Title
 
 [Project 1 Title](/sample_page)
-
+<br>
+[![](https://img.shields.io/badge/Python-Project-blue-?logo=Python)](https://www.linkedin.com/in/ana-cavalcante/)
+<br>
 Little description
 <!--
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
