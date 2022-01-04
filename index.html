@@ -1,220 +1,337 @@
 <!DOCTYPE HTML>
 <!--
-	Solid State by HTML5 UP
+	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+	<!-- 	This is the "Head" of the HTML document.
+		It contains information that isn't displayed on the actual page, but is useful
+		for the web browser when loading the page
+	-->
 	<head>
-		<title>Ana Cavalcante's Portfolio</title>
+		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
+		<title>Ana Cavalcante's Portfolios</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
+			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
+			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
+			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/>
+		-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
+			will load a separate set of CSS stylings from the file assets/css/noscript.css
+			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
+			available.
+		-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
+			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+					<!-- This is where the content that appears on page load exists -->
+					<header id="header">
+						<!-- This is the main content of the front page -->
+						<div class="content">
+							<div class="inner">
+								<!-- Here is a heading where you can put your name -->
+								<h1>
+									Ana Cavalcante
+								</h1>
+								<!-- 	Here is an image where you can put a picture of you.
+									You can change the width and height attributes below to change how large
+									your image is.
+
+									Try adding "border-radius: 50%;" to the style attribute.
+								-->
+								<img src="images/ABRC_fun.jpeg" style="width:280px; height:280px; border-radius: 50%; object-fit: cover;">
+								<!-- 	Here is a paragraph where you can put your position and institution, or
+									a short line about yourself.
+								-->
+								<p>
+									PhD | Physicist | Data Scientist
+								</p>
+								<!-- Here is a paragraph where you can put a link to your CV -->
+								<p>
+									<!-- Note you will want to change where this points to! -->
+									<a href="https://bit.ly/cv-ana-cavalcante" target="_blank">Curriculum Vitae</a>
+								</p>
+							</div>
+						</div>
+
+						<!-- This is the navigation menu -->
 						<nav>
-							<a href="#menu">Menu</a>
+							<!-- This element makes an "Unordered List" -->
+							<ul>
+								<!-- This is a "List Item" -->
+								<li>
+									<!-- 	Note that this links to #about, which will move the page to wherever
+										the element with the id "about" exists.
+									-->
+									<a href="#about">About Me</a>
+								</li>
+								<li>
+									<a href="#research">Projects</a>
+								</li>
+								<!--
+								<li>
+									<a href="#community">Community</a>
+								</li>
+							-->
+								<li>
+									<a href="#contact">Contact</a>
+								</li>
+								<!-- 	You can add another button to your navigation menu by adding
+									another List Item with a link inside of it.
+								-->
+								<!-- <li>
+									<a href="images/Astronomy.jpg">My CV</a>
+								</li> -->
+							</ul>
 						</nav>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<!--<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>-->
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<!-- <div class="logo"><span class="icon fa-gem"></span></div> -->
-							<a href="#" class="image"><img src="images/abrc.png" width="255" height="255" alt="" /></a>
-							<h2>Ana Cavalcante's Portfolio</h2>
-							<h4>I am a physicist with +5 experience with data analysis.</h4> 
-							<h4>I am passionate about solving business problems using Data Science & Machine Learning.</h4> 
-							<h4>I am constantly learning, and always looking to improve.</h4>
-							<!--<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-							<p> PORTFOLIO </p> -->
-						</div>
-
-					</section>
-
-
-				<!-- Wrapper -->
-					<section id="wrapper">
-
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<!--<a href="#" class="image"><img src="images/project01.png" alt="" /></a> -->
-									<div class="content">
-										<h2 class="major">Sentiment Analysis</h2>
-										<h3 class="major"><u>Skills</u>: Web Scrapping, ETL, Pandas, NLP, Matplotlib</h3>
-										<p> A sentiment analysis of recent tweets is performed to evaluate if the overall emotion about a subject is negative or positive. The data is acumulated by web scraping 1000 recent tweets containing the terms 'covid', 'climate change' and 'crypto'. This can be a valuable tool to analyse the overall emotion of a product, service or brand given some textual reviews for example. </p>
-										<a href="https://github.com/anabarbararc/sentiment_analysis"> <img src='https://img.shields.io/badge/Python-Project-3776AB?logo=python&logoColor=white' width="150"></a>				</div>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style6">
-								<div class="inner">
-									<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
-									<div class="content">
-										<h2 class="major">Exploratory Data Analysis</h2>
-										<h3 class="major"><u>Skills:</u> EDA, Pandas, Matplotlib, Numpy</h3>
-										<p> In this project, I perform EDA on COVID-19 clinical trials data provided by ClinicalTrials.gov database. I investigate information about age groups, gender, location, number of participants, trials' status, and average time to complete the trials. </p>
-										<a href="https://github.com/anabarbararc/covid_19_clinical_trials"> <img src='https://img.shields.io/badge/Python-Project-3776AB?logo=python&logoColor=white' width="150"></a>	<abbr></abbr></div>
-									</div>
-								</div>
-							</section>
-
-						<!-- Three 
-							<section id="two" class="wrapper spotlight style1">
-								<div class="inner">
-
-									<div class="content">
-										<h2 class="major">Classification (Bank notes)</h2>
-										<h3 class="major"><u>Skills:</u> </h3>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="https://github.com/anabarbararc/sentiment_analysis/blob/main/Medium-ETL-NLP.ipynb"> <img src='https://img.shields.io/badge/Python-Project-3776AB?logo=python&logoColor=white' width="150"></a>	<abbr></abbr></div>
-									</div>
-								</div>
-							</section>
-							-->/							
-
-						<!-- Three 
-							<section id="three" class="wrapper alt spotlight style6">
-								<div class="inner">
-									
-									<div class="content">
-										<h2 class="major">Convoluted Neural Network</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="https://github.com/anabarbararc/sentiment_analysis/blob/main/Medium-ETL-NLP.ipynb"> <img src='https://img.shields.io/badge/Python-Project-3776AB?logo=python&logoColor=white' width="150"></a>	
-									</div>
-								</div>
-							</section>
-							-->
-
-						<!-- Four 
-							<section id="two" class="wrapper spotlight style1">
-								<div class="inner">
-									<div class="content">
-										<h2 class="major">Decision Trees</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="https://github.com/anabarbararc/sentiment_analysis/blob/main/Medium-ETL-NLP.ipynb"> <img src='https://img.shields.io/badge/Python-Project-3776AB?logo=python&logoColor=white' width="150"></a>	
-									</div>
-								</div>
-							</section>
-							-->							
-
-						<!-- Four 
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
+					<!-- These are the "cards" that appear when you click the buttons on the main page -->
+					<div id="main">
+						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous
+							button links to.
 						-->
+						<article id="about">
+							<h2 class="major">About Me</h2>
+							<!-- Here is an image that you can customize for this page -->
+							<span class="image main">
+								<!--<img src="images/smiling_lens_hubble.jpg" alt=""/> A smiling lens. Credit: NASA & ESA.-->
+							</span>
+							<p>
+							I have more than five years of experience working with data analysis at CERN. I am enthusiastic about solving business problems using Data Science and Machine Learning. I am constantly learning, and always looking to improve.
+						    </p>
+							<!-- Here are three paragraphs where you can fill out information about yourself -->
+							<p>
+								<!-- Items contained in <b> tags are bolded! -->
+								<h3><u>Professional Experience</u></h3>
+								<ul type="square">
+	               					<li>Research assistant at École Technique Fédérale de Lausanne (EPFL), 2017-2021</li>
+	               				 	<li>Visiting Ph.D student at European Center for Nuclear Research (CERN), 2014-2016</li>
 
-					</section>
+                				</ul>
+							</p>
+							</p>
+							
+							<p>	
+								<h3><u>Education</u></h3>
+								<ul type="square">
+	               					<li>Ph.D in Physics, Brazilian Center for Research in Physics (CBPF), 2017</li>
+								 	<a href="images/CERN-THESIS-2017-259.pdf" target="_blank">"CP violation studies in three-body charmless B± decays and contributions to the LHCb SciFi Tracker"</a>
+	               				 	<li>M.S. in Physics, Rio de Janeiro Federal University (UFRJ), 2013</li>
+								 	<li>B.S. in Physics, Rio de Janeiro Federal University (UFRJ), 2010</li>
+                				</ul>
+							</p>
+								<!-- <p>
+								<b>Research Interests:</b>
+							</p> -->
+
+						</article>
+
+						<!-- Here is the "Research" card. -->
+						<article id="research">
+							<h2 class="major">Projects</h2>
+
+							<p>
+								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
+									the next line.
+								-->
+								<h3><font color='#00BFFF'>Sentiment Analysis</font></h3>
+								<h4 class="major">Skills: Web Scrapping, ETL, Pandas, NLP, Matplotlib</h4>
+								<p>A sentiment analysis of recent tweets is performed to evaluate if the overall emotion about a subject is negative or positive. The data is acumulated by web scraping 1000 recent tweets containing the terms 'covid', 'climate change' and 'crypto'. This can be a valuable tool to analyse the overall emotion of a product, service or brand given some textual reviews for example.
+                <span class="image main">
+								<a href='https://github.com/anabarbararc/sentiment_analysis/blob/main/Sentiment%20Analysis.ipynb'> <img src="images/project-01.png" alt=""/> </a>
+							  </span>
+               </p>
+
+               				<hr>
+							<p>
+
+								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
+									the next line.
+								-->
+								<h3><font color='#00BFFF'>Exploratory Data Analysis</font></h3>
+								<h4 class="major">Skills: EDA, Pandas, Matplotlib, Numpy</h4>
+								<p>In this project, I perform EDA on COVID-19 clinical trials data provided by ClinicalTrials.gov database. I investigate information about age groups, gender, location, number of participants, trials' status, and average time to complete the trials.
+
+									 <span class="image main">
+									<a href="https://github.com/anabarbararc/covid_19_clinical_trials/blob/main/EDA%20-%20COVID-19%20Clinical%20Trials.ipynb"> <img src="images/project-02.png" alt=""/> </a>
+									</span>
+
+							</p>
+							<hr>
+							<p>
+								<h3><font color='##00BFFF'>Linear Regression</font></h3>
+								<h4 class="major">Skills: EDA, Scikit-learn, Pandas, Matplotlib</h4>
+								<p> What can we discover using Linear Regression? In this project, Linear Regression is used to determine the best features that define the best tennis players. The data provides information about the men’s professional tennis league from the top 1500 ranked players in the Association of Tennis Professionals.
+
+									 <span class="image main">
+									<a href="https://github.com/anabarbararc/tennisace/blob/main/tennis_ace.ipynb"> <img src="images/project-03.png" alt=""/> </a>
+							</p>
+						</article>
+
+						<!-- Here is the "Community" card. 
+						<article id="community">
+							<h2 class="major">Community</h2>
+							<span class="image main">
+								<img src="images/outreach1.png" alt=""/>Images: Brazilian Science & Tech Week. Cultural Tourism.
+							</span>
+							<p>
+								<b>Teaching:</b><br>
+                  &#8227; Jul 2015 - Monitor of the <a href="http://mesonpi.cat.cbpf.br/escola2015/?pgn=ProgramaPROFCEM">"Continuing Education Program for High School Teachers" (PROFCEM/CBPF)</a>: Set up and
+									present Modern Physics experiments for teachers of public high schools.
+							</p>
+							<p>
+								<b>Outreach:</b><br>
+								&#8227; Sep 2020 - SciComm article for the blog "Cientistas Feministas" (in Portuguese) <a href="https://cientistasfeministas.wordpress.com/2020/09/03/o-grande-censo-cosmico-contando-e-pesando-gigantes-no-ceu/">"O Grande Censo Cósmico: Contando e Pesando Gigantes no Céu"</a><br>
+								<br>
+								&#8227; May 2020 - SciComm article for the blog "Cientistas Feministas" (in Portuguese) <a href="https://cientistasfeministas.wordpress.com/2020/05/28/gigantes-no-ceu/">"Gigantes no Céu, o Desvio da Luz e o Eclipse de Sobral"</a><br>
+								<br>
+								&#8227; Nov 2019 - Participation in the article <a href="https://www.energy.gov/science/articles/how-build-3d-map-universe-and-why">"How to Build a 3D Map of the Universe – and Why"</a> by DOE Office of Science. <br>
+								<br>
+								&#8227; Mar 2019 - Featured on the series <a href="https://www.darkenergysurvey.org/scientistoftheweek/maria-elidaiana-da-silva-pereira/">DES Scientist of the Week </a>.<br>
+								<br>
+								&#8227; May 2015/2017 - Monitor of the "Cultural Tourism in the Imperial district of São Cristóvão" (Museum of Astronomy and Related Sciences/Rio de Janeiro): An annual exhibition of Basic Physics experiments for the general public. <br>
+								<br>
+								&#8227; Oct 2013/2014/2016 - Monitor of the "Brazilian National Science and Technology Week" (Itinerant event): Set up and present Basic Physics experiments to the general public during a week.
+							</p>
+
+							<span class="image main">
+								<img src="images/equity1.png" alt=""/>Images: Women in Science events at CBPF.
+							</span>
 
 
-				<!-- Footer 
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+							<p>
+								<b>Equity & Inclusion:</b><br>
+								&#8227; Mar 2020 - Author of the article <a href="https://cientistasfeministas.wordpress.com/2020/03/08/dia-internacional-da-mulher/">"Dia Internacional da Mulher"</a> (in Portuguese) for the blog "Cientistas Feministas".<br>
+								<br>
+								&#8227; Mar 2017 - Organizer of the <a href="http://portal.cbpf.br/pt-br/ultimas-noticias/pos-graduandas-do-cbpf-organizam-evento-para-o-dia-internacional-da-mulher">"International Women's Day at CBPF".</a> <br>
+								<br>
+								&#8227; Feb 2017 - Organizer of the institutional meeting to celebrate the <a href="https://portal.cbpf.br/pt-br/ultimas-noticias/cbpf-comemora-hoje-10-o-dia-internacional-das-mulheres-e-das-meninas-na-ciencia">"International Day of Women and Girls in Science at CBPF"</a>.<br>
+								<br>
+								&#8227; May 2015/Jun 2016 - Organizer of the "Survey of scientific working environment in the Brazilian astronomical Community" - LACAN: A survey to quantify the harassment situations in the work environment of the astronomical community in Brazil.
+								The results can be found <a href="https://lacanastro.wixsite.com/lacan2015-english">here</a>. <br>
+								<br>
+								&#8227; Mar 2015 - Organizer of the debate <a href="https://www.instagram.com/p/0y0whdL-hs/?igshid=1bpt25761eezp">"Gender Equality in Physics"</a> at CBPF.
+
+
+							</p>
+						</article>
+						    -->
+
+						<!-- Here is a the "Contact" card. -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<p>
+								<!--<b>Email:</b> anabarbara.if@gmail.com-->
+							</p>
+							<p>
+								<!--
+								<b>Address:</b> Universität Hamburg (Hamburger Sternwarte) <br>
+								&emsp; &emsp; &emsp; &nbsp;Gojenbergsweg 112 <br>
+								&emsp; &emsp; &emsp; &nbsp;Hamburg, DE - 21029 </br></br>
+							-->
+							</p>
+
+							<!-- 	Here are the fancy icons that link to your social media.
+								These icons are rendered using Font Awesome fonts, and you can find more icons
+								here: https://fontawesome.com/icons
+							-->
+							<ul class="icons">
+								<!-- The Linkedin icon -->
+								<li>
+									<a href="https://www.linkedin.com/in/ana-cavalcante" class="icon fa-linkedin">
+										<span class="label">Linkedin</span>
+									</a>
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<!-- The Twitter icon -->
+								<li>
+									<!-- 	Note that you need to change the link to point to your page.
+										Replace "#" with your Twitter profile page.
+									-->
+									<!--
+									<a href="https://twitter.com/mariaelidaiana?lang=en" class="icon fa-twitter">
+										<span class="label">Twitter</span>
+									</a>
+								-->
+								</li>
+								<!-- The ReseachGate icon -->
+								<li>
+								<!--
+									<a href="https://www.researchgate.net/profile/Maria_Elidaiana_Pereira" class="icon fa-researchgate">
+										<span class="iconify icon-width:16px icon-height:16px icon-inline:true" data-icon="fa-brands:researchgate" data-inline="false"></span>
+									</a>
+								-->
+								</li>
+
+								<!-- The Facebook icon
+								<li>
+									<a href="#" class="icon fa-facebook">
+										<span class="label">Facebook</span>
+									</a>
+								</li> -->
+								<!-- The Instagram icon
+								<li>
+									<a href="#" class="icon fa-instagram">
+										<span class="label">Instagram</span>
+									</a>
+								</li> -->
+								<!-- The GitHub icon -->
+								<li>
+									<a href="https://github.com/anabarbararc" class="icon fa-github">
+										<span class="label">GitHub</span>
+									</a>
+								</li>
+								<!-- 	We can add a new icon by searching on the Font Awesome website
+									for the correct class name and inserting it as a new list item.
+
+									We found "envelope" here: https://fontawesome.com/icons/envelope
+								-->
+								<!-- <li>
+									<a href="#" class="icon fa-envelope">
+										<span class="label">Email</span>
+									</a>
+								</li> -->
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-					-->
+						</article>
+				   <!-- This is the translation of the page to Portuguese-->
+					 <article id="ptindex">
+						<!--<h2 class="major">Português</h2>-->
+						</article>
+        	</div>
+
+					<!-- This is the footer that appears at the bottom of the page -->
+					<footer id="footer">
+						<!-- 	You can change "Untitled" to your name to show everyone that
+							this is your work.
+						-->
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>. Image: The Perseid Meteor Shower by NASA.</p>
+					</footer>
+
 			</div>
 
-		<!-- Scripts -->
+			<!--	This is the background image of the site.
+				All configuration of the background is done with CSS.
+				Look in the file assets/css/main.css and search for "#bg" to
+				see how this element is styled. Look for comments pointing
+				to where you can set a new background image.
+			-->
+			<div id="bg"></div>
+
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+      <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script> <!-- Add to fix Researah Gate icon -->
 	</body>
 </html>
